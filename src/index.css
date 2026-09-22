@@ -4,7 +4,7 @@
 @layer base {
   html {
     /* Set default zoom level to 150% for 15-inch and higher-resolution displays */
-    zoom: 130%;
+    zoom: 100%;
     scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
