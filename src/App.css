@@ -182,3 +182,39 @@
     border-right-color: var(--border);
   }
 }
+
+/* ==========================================
+   DAV Style Movable Notice Board Animations
+   ========================================== */
+
+/* Upward Scroll Keyframes */
+@keyframes noticeScrollUp {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-66.66%);
+  }
+}
+
+/* Notice Board Container Animation Class */
+.animate-notice-scroll {
+  display: flex;
+  flex-direction: column;
+  animation: noticeScrollUp 20s linear infinite !important;
+  will-change: transform;
+}
+
+/* Hover karne par animation pause ho jayega taaki notice padha ja sake */
+.animate-notice-scroll:hover {
+  animation-play-state: paused !important;
+}
+
+/* Smooth Scrolling & Font Enhancements for Notice Items */
+.notice-card {
+  transition: background-color 0.2s ease-in-out;
+}
+
+.notice-card:hover {
+  background-color: rgba(239, 246, 255, 0.8);
+}
